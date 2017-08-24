@@ -4,11 +4,13 @@
         function pageLoaded() { 
             var qAt = document.URL.indexOf("?"); 
             var params = document.URL.substr(qAt+1); 
+            $('#url_value').value=params;
             // Use params as needed (parse, or pass along to flash swf): 
-            alert(params);  // just echoing in this example. 
+            //alert(params);  // just echoing in this example. 
         } 
     </script> 
 </head> 
 <body onload="pageLoaded()"> 
+    <inpunt type='text' id='url_value'></input>
 </body> 
 </html>
