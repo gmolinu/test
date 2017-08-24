@@ -5,11 +5,12 @@
         function pageLoaded() { 
             var qAt = document.URL.indexOf("?"); 
             var params = document.URL.substr(qAt+1); 
-            $('#url_value').value=params;
+            //$('#url_value').value=params;
+            $('#param').text(params);
         } 
     </script> 
 </head> 
 <body onload="pageLoaded()"> 
-    <input type='text' id='url_value'></input>
+    <p id="param">Nessun parametro</p>
 </body> 
 </html>
