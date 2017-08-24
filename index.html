@@ -1,12 +1,11 @@
 <html> 
 <head> 
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script> 
         function pageLoaded() { 
             var qAt = document.URL.indexOf("?"); 
             var params = document.URL.substr(qAt+1); 
             $('#url_value').value=params;
-            // Use params as needed (parse, or pass along to flash swf): 
-            //alert(params);  // just echoing in this example. 
         } 
     </script> 
 </head> 
