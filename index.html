@@ -6,16 +6,15 @@
         function pageLoaded() { 
             var qAt = document.URL.indexOf("?"); 
             var params = document.URL.substr(qAt+1); 
-            //$('#url_value').value=params;
             $('#param').text(params);
             $('#UserAgent').val(navigator.userAgent);
         } 
     </script> 
 </head> 
 <body onload="pageLoaded()"> 
-    URL parameter: <p id="param">Nessun parametro</p>
+    URL parameter: <div id="param">Nessun parametro</div>
     <br />
-    User Agent <p id="UserAgent">User Agent identificato</p>
+    User Agent <div id="UserAgent">User Agent identificato</div>
     <br />
     <br />
     <a href='dvc://www.doveconviene.it/_screens/webview?url=https%3A%2F%2Fgmolinu.github.io%2Ftest%2Findex.html%3Flat%3D%5B%5Blat%5D%5D%26lng%3D%5B%5Blng%5D%5D%26muid%3D%5B%5Bmuid%5D%5D'>deeplink completo</a>	
